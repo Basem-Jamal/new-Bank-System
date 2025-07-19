@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/login/log.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="col-left">
+            </div>            
+            <div class="col-right">
+                <div class="form">
+                    <div class="login">
+                        <div class="log-title"><h1>Welcome To Login Page</h1></div>
+                        <label for="#">Email<input class="email" type="email" placeholder="email" required id="log-email">
+                        </label>
+                        <label for="#">Password<input class="password" type="password" placeholder="password" required id="log-password">
+                        </label>
+                        <input class="btn" type="submit" value="Login" id="log-submit">
+                        <button class="btn-sign">Do you want SignUp ?</button>
+                    </div>
+
+                    <div class="signUp">
+                        <div class="log-title"><h1>Welcome To SignUp Page</h1></div>
+                        <label for="#">Name<input class="name" type="text" placeholder="name" required id="sign-name">
+                        </label>
+                        <label for="#">Email<input class="email" type="email" placeholder="email" required id="sign-email">
+                        </label>
+                        <label for="#">Password<input class="password" type="password" placeholder="password" required id="sign-password">
+                        </label>
+                        <input class="btn" type="submit" value="SignUp" id="sign-submit">
+                        <button class="btn-login">Do you have any accounts?</button>
+                    </div>
+                </div>
+            </div>
+            <div class="blur"></div>
+        </div>
+    </main>
+
+    <script src="/login/log.js"></script>
+</body>
+</html>

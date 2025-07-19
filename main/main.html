@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>My Bank</title>
+</head>
+<body>
+    <div class="backg"></div>
+    <div class="blur"></div>
+
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <div class="title"><h1>Account information</h1></div>
+                <P class="accountInformaiton" id="info-Current-accountNumber"></P>
+                <p class="accountInformaiton" id="info-Current-name"></p>
+                <p class="accountInformaiton" id="info-Current-email"></p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <div class="title"><h1>Balances information</h1></div>
+                <div class="infoBalance">
+                    <i class="fa-solid fa-money-bill-1-wave"></i>
+                    <p id="info-Current-balance"></p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <div class="title"><h1>Account transfers</h1></div>
+                <div class="infoTransfers">
+                    <button id="deposit">Deposit</button>
+                    <button id="withdraw">Withdraw</button>
+                    <button id="transactions">Transactions</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="transferSystem">
+        
+
+        <div class="formDeposit">
+            <div class="dipositTitleScreen"><h1>Deposit Screen</h1></div>
+
+            <label class="labelTransfer" for="#">My Account</label>
+            <input class="inputTransfer" type="text" id="deposit-CurrentAccountNumber" readonly>
+
+            <label class="labelTransfer" for="#">Amount</label>
+            <input class="inputTransfer" type="text" id="deposit-amount">
+
+            <label class="labelTransfer" for="#">Reason for addition</label>
+            <select name="#" id="deposit-reason">
+                <option value=""></option>
+                <option value="Salary">Salary</option>
+                <option value="SavingMoney">Saving money</option>
+                <option value="Other">Other</option>
+            </select>
+            
+            <div class="SendAndbtnCansel">
+                <button class="inputSendOrCancel" id="deposit-send">Send</button>
+                <button class="inputSendOrCancel" id="deposit-cancel">Cansel</button>    
+            </div>
+        </div>
+
+        <div class="formWithdraw">
+            <div class="withdrawTitleScreen"><h1>Withdraw Screen</h1></div>
+
+            <label class="labelTransfer" for="#">My Account</label>
+            <input class="inputTransfer" type="text" id="withdraw-CurrentAccountNumber" readonly>
+
+            <label class="labelTransfer" for="#">Amount</label>
+            <input class="inputTransfer" type="text" id="withdraw-amount">
+
+            <label class="labelTransfer" for="#">Reason for addition</label>
+            <select name="#" id="withdraw-reason">
+                <option value=""></option>
+                <option value="Salary">Salary</option>
+                <option value="SavingMoney">Saving money</option>
+                <option value="Other">Other</option>
+            </select>
+            
+            <div class="SendAndbtnCansel">
+                <button class="inputSendOrCancel" id="withdraw-send">Send</button>
+                <button class="inputSendOrCancel" id="withdraw-cancel">Cansel</button>    
+            </div>
+
+        </div>
+        <div class="formTransactions">
+
+        </div>
+
+    </div>
+
+
+    <script src="/main/main.js"></script>
+</body>
+</html>

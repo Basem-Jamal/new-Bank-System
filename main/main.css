@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+}
+
+:root {
+    --primary:#27374D; 
+    --primary2:#526D82; 
+    --primary3:#9DB2BF; 
+    --primary3:#DDE6ED; 
+}
+
+body {
+
+    width: 100%;
+    height: 100vh;
+    background-image: url(/main/img-bank/main-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}   
+
+.backg {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000a2;
+    z-index: 3;
+}
+.blur {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+
+}
+
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 1400px;
+    height: 500px;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 2;
+}
+
+.container .card {
+    position: relative;
+    width: 30%;
+    height: 70%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px #555555ce;
+    border-top: 5px solid var(--primary);
+    overflow-y: auto;
+    z-index: 2;
+}
+
+.container .content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.content .title {
+    width: 100%;
+}
+
+.accountInformaiton {
+    position: relative;
+    align-items: center;
+    top:40px;
+    padding-left: 20px;
+    margin: 10px;
+    line-height: 50px;
+    font-size: 20px;
+
+    background-color: var(--primary3);
+    border-radius: 10px;
+    
+}
+
+/* Balance */ 
+
+.infoBalance {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-self: anchor-center;
+
+}
+.infoBalance  #info-Current-balance {
+    display: inline;
+    position: relative;
+    padding-left: 20px;
+    line-height: 50px;
+    font-size: 26px;
+    align-content: center;
+
+}
+.infoBalance i {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    display: inline;
+    text-align: center;
+    align-content: center;
+    background-color: var(--primary3);
+    color: var(--primary);
+    border-radius: 50px;
+    font-size: 60px;
+}
+
+/* info transfer */
+
+.infoTransfers {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.infoTransfers button {
+
+    margin-top: 50px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.transferSystem {
+    position: relative;
+    width: 600px;
+    height: 1000px;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #27374D;
+    z-index: 3;
+    border-radius: 15px;
+    border-left: 5px solid var(--primary3);
+    
+}
+
+/* Deposit & Withdraw*/
+
+
+.dipositTitleScreen , .withdrawTitleScreen {
+    position: relative;
+    bottom: 250px ;
+    text-align: center;
+    font-size: 25px;
+    background-color: var(--primary3);
+    color: var(--primary);
+    border-radius: 10px 10px 0 0;
+
+}
+
+
+.formDeposit , .formWithdraw {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.SendAndbtnCansel {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    top: 100px;
+}
+
+.inputSendOrCancel {
+    width: 250px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.labelTransfer {
+    display: block;
+    margin-bottom: 5px;
+
+    position: relative;
+    width: fit-content;
+    top: 30px;
+    font-size: 19px;
+    padding-left: 20px;
+    color: var(--primary3);
+    font-weight: bold;
+}
+
+
+.inputTransfer ,select {
+    display: block;
+    font-size: 18px;
+    gap: 50px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+    width: 62%;
+    height: 5%;
+    align-self: flex-end;
+    border-radius: 5px;
+    padding: 10px;
+    transition: ease-in 0.1s;
+
+}
+
+.inputTransfer:focus {
+    transition: ease-in 0.2s;
+    color: var(--primary3);
+    background-color: var(--primary2);
+}
+
+
+#deposit-CurrentAccountNumber ,#withdraw-CurrentAccountNumber{
+    color: var(--primary3);
+    background-color: var(--primary2);
+    cursor:pointer;
+}
+option {
+    color: var(--primary3);
+    background-color: var(--primary2);
+
+}
+
