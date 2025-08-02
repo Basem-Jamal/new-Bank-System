@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول - البنك الإلكتروني</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/newBank/css/auth.css">
+</head>
+<body>
+
+
+    <div class="auth-container">
+        <div class="auth-hero">
+            <div class="hero-overlay">
+                <h2>مرحبًا بك في البنك الإلكتروني</h2>
+                <p>الحلول المالية الحديثة بين يديك</p>
+            </div>
+        </div>
+
+        <!-- جزء النموذج -->
+         <div class="auth-form">
+
+            <form id="login-form">
+                <div class="form-header">
+                    <h1><i class="fas fa-university"></i>تسجيل الدخول</h1>
+                    <p>ادخل بيانات حسابك للوصول إلى خدماتنا</p>
+                </div>
+    
+                <div class="input-group">
+                    <label for="email"> <i class="fas fa-envelope"></i>البريد الإلكتروني</label>
+
+                    <input type="email" id="login-email" required placeholder="example@bank.com">
+                </div>
+
+                <div class="input-group">
+                    <label for="password"> <i class="fas fa-fas fa-lock"></i>كلمة المرور</label>
+
+                    <input type="password" id="login-password" required placeholder="••••••••">
+
+                </div>
+
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox"> تذكرني
+                    </label>
+                    <a href="#">نسيت كلمة المرور؟</a>
+                </div>
+
+                <button id="btnLogin" type="submit" class="btn btn-primary">
+                    <i class="fas fa-sign-in-alt"></i> تسجيل الدخول
+                </button>
+
+                <div class="auth-footer">
+                    <p>ليس لديك حساب؟ <a id="auth-footer-SignUp" href="#">انشئ حسابًا جديدًا</a></p>
+                </div>
+            </form>
+
+            <form id="sign-form">
+                <div class="form-header">
+                    <h1><i class="fas fa-university"></i> انشئ حسابًا جديدًا</h1>
+                    <p>انشئ حسابًا جديدًا لتتمكن من الاستفادة من خدماتنا</p>
+                </div>
+    
+                <div class="input-group">
+                    <label for="name"> <i class="fa-solid fa-user"></i>الإسم</label>
+
+                    <input type="text" id="sign-name" required placeholder="name">
+                </div>
+
+                <div class="input-group">
+                    <label for="email"> <i class="fas fa-envelope"></i>البريد الإلكتروني</label>
+
+                    <input type="email" id="sign-email" required placeholder="example@bank.com">
+                </div>
+
+                <div class="input-group">
+                    <label for="password"> <i class="fas fa-fas fa-lock"></i>كلمة المرور</label>
+
+                    <input type="password" id="sign-password" required placeholder="••••••••">
+
+                </div>
+
+                <button id="btnSignUp" type="submit" class="btn btn-primary">
+                    <i class="fa-solid fa-plus"></i> تسجيل
+                </button>
+
+                <div class="auth-footer">
+                    <p>لديك حساب ؟  <a id="auth-footer-Login" href="#">تسجيل الدخول</a></p>
+                </div>
+            </form>
+
+         </div>
+    </div>
+     <script src="/newBank/js/auth.js"></script>
+</body>
+</html>

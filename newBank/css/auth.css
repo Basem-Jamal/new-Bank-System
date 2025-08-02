@@ -1,0 +1,216 @@
+:root {
+    --primary: #27374D;
+    --primary-light: #526D82;
+    --secondary: #9DB2BF;
+    --light: #DDE6ED;
+    --white: #ffffff;
+    --gray: #f5f5f5;
+    --dark: #333333;
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--light);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* ===== هيكل الحاوية الرئيسية ===== */
+.auth-container {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    height: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.auth-hero {
+    flex: 1;
+    background: linear-gradient(rgba(39, 55, 77, 0.8), rgba(39, 55, 77, 0.8)), 
+    url('/newBank/assets/images/main-img.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    padding: 40px;
+    position: relative;
+}
+
+.hero-overlay {
+    text-align: center;
+    z-index: 2;
+}
+
+.hero-overlay h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.hero-overlay p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* ===== جزء النموذج ===== */
+.auth-form {
+    flex: 1;
+    background: var(--white);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.form-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form-header h1 {
+    color: var(--primary);
+    margin-bottom: 10px;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.form-header p {
+    color: var(--primary-light);
+    font-size: 16px;
+}
+
+#login-form {
+    transition: all 3.s;
+}
+/* ===== حقول الإدخال ===== */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;;
+    color: var(--dark);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    transition: var(--transition);
+}
+
+.input-group input:focus {
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(39, 55, 77, 0.1);
+
+}
+
+/* ===== تذكرني ونسيت كلمة المرور ===== */
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.remember-forgot label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.remember-forgot a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: var(--transition);
+}
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+
+/* ===== الأزرار ===== */
+.btn {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: var(--white);
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background: var(--primary-light);
+}
+
+/* ===== تذييل النموذج ===== */
+.auth-footer {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--dark);
+    font-size: 14px;
+}
+
+.auth-footer a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+/* ===== التجاوبية ===== */
+@media (max-width: 768px) {
+    .auth-container {
+        flex-direction: column;
+        height: auto;
+    }
+    .auth-hero {
+        height: 200px;
+        padding: 20px;
+    }
+    .auth.form {
+        padding: 30px;
+    }
+}

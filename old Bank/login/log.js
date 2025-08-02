@@ -8,7 +8,6 @@ class clsRegistration {
         this.balances      = balances;
     }
 }
-
   
 let baseAccountNumber = "SA" + 100020001000;
 let accountIncrement = Number(localStorage.getItem("accountIncrement")) || 1;

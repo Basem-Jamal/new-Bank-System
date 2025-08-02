@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم - البنك الإلكتروني</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/newBank/css/dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <h1><i class="fas fa-university">البنك الإلكتروني</i></h1>
+            </div>
+
+            <nav class="nav-links">
+                <ul>
+                    <li class="active">
+                        <a href="#">
+                            <i class="fas fa-home"></i>
+                            <span>لوحة التحكم</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-exchange-alt"></i>
+                            <span>المعاملات</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <span>التحويل</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-plus-circle"></i>
+                            <span>الإداع</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-minus-circle"></i>
+                            <span>السحب</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-cog"></i>
+                            <span>الإعدادات</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="logout-btn">
+                <a href="#">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>تسجيل الخروج</span>
+                </a>
+            </div>
+
+        </aside>
+
+        <!-- المحتوى الرئيسي -->
+        <main class="main-content">
+            <header class="header">
+                <div class="search-bar">
+                    <input type="text" placeholder="بحث...">
+                    <i class="fas fa-search"></i>
+                </div>
+
+                <div class="user-info">
+                    <div class="notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">3</span>
+                    </div>
+
+                    <div class="user-avatar">
+                        <span class="user-avatar-now">م</span>
+                    </div>
+
+                    <div class="user-details">
+                        <h2 class="user-name"></h2>
+                        <p class="user-account"></p>
+                    </div>
+                    
+                </div>
+            </header>
+
+            <div class="content">
+                 <!-- بطاقات المعلومات -->
+                  <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                        <div class="card-info">
+                            <h3>الرصيد الحالي</h3>
+                            <p>12,450.75 <span>ر.س</span></p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-arrow-up"></i>
+                        </div>
+                        <div class="card-info">
+                            <h3>الإيداعات</h3>
+                            <p>17,200.00 <span>ر.س</span></p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <div class="card-info">
+                            <h3>السحوبات</h3>
+                            <p>4,749.25 <span>ر.س</span></p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <div class="card-info">
+                            <h3>التحويلات</h3>
+                            <p>32 <span>عملية</span></p>
+                        </div>
+                    </div>
+                  </div>
+                    <!-- المعاملات الأخيرة -->
+                    <div class="recent-transactions">
+                        <div class="section-header">
+                            <h2>آخر المعاملات</h2>
+                            <a href="#" class="view-all">عرض الكل</a>
+                        </div>
+                        
+                        <div class="transactions-list">
+                            <div class="transaction-item">
+                                <div class="transaction-icon success">
+                                    <i class="fas fa-arrow-down"></i>
+                                </div>
+                                <div class="transaction-details">
+                                    <h3>تحويل وارد</h3>
+                                    <p>من: احمد محمد</p>
+                                    <small>اليوم، 10:30 صباحًا</small>
+                                </div>
+                                
+                                <div class="transaction-amount success">+1,200.00 ر.س</div>
+                            </div>
+
+                            <div class="transaction-item">
+                                <div class="transaction-icon danger">
+                                    <i class="fas fa-arrow-up"></i>
+                                </div>
+
+                                <div class="transaction-details">
+                                    <h3>سحب نقدي</h3>
+                                    <p>من: الصراف الآلي</p>
+                                    <small>أمس، 05:15 مساءً</small>    
+                                </div>
+                                <div class="transaction-amount danger">
+                                    -500.00 ر.س
+                                </div>
+                            </div>
+                            <div class="transaction-item">
+                                <div class="transaction-icon success">
+                                    <i class="fas fa-arrow-down"></i>
+                                </div>
+                                <div class="transaction-details">
+                                    <h3>إيداع راتب</h3>
+                                    <p>شركة التقنية المحدودة</p>
+                                    <small>14 مايو 2023</small>    
+                                </div>
+                                <div class="transaction-amount success">
+                                    +5,000.00 ر.س
+                                </div>    
+                            </div>
+                        </div>                        
+                    </div>
+               </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/newBank/js/dashboard.js"></script>
+</body>
+</html>
