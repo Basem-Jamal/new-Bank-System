@@ -17,7 +17,7 @@
             <nav class="nav-links">
                 <ul>
                     <li class="active">
-                        <a href="#">
+                        <a id="navControl-home" href="#">
                             <i class="fas fa-home"></i>
                             <span>لوحة التحكم</span>
                         </a>
@@ -36,7 +36,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a id="navDeposit"  href="#">
                             <i class="fas fa-plus-circle"></i>
                             <span>الإداع</span>
                         </a>
@@ -109,7 +109,7 @@
                         </div>
                         <div class="card-info">
                             <h3>الإيداعات</h3>
-                            <p>17,200.00 <span>ر.س</span></p>
+                            <p class="currentDepoists">17,200.00 <span>ر.س</span></p>
                         </div>
                     </div>
 
@@ -182,6 +182,20 @@
                                 </div>    
                             </div>
                         </div>                        
+                    </div>
+                    <div class="transactions">
+                        <div class="form-trans">
+                            <div class="depoist">
+                                <div class="title-trans">
+                                    <i class="fas fa-plus-circle"></i>
+                                    <h1>الإداع</h1>
+                                </div>
+                                
+                                <h3>المبلغ</h3>
+                                <input id="tepy-input" type="text" required placeholder="اضف المبلغ">
+                                <button id="add-amount" type="submit">add amount</button>
+                            </div>
+                        </div>
                     </div>
                </div>
             </div>

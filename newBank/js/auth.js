@@ -6,6 +6,7 @@ class clsRegistration {
         this.email         = email;
         this.password      = password;
         this.balances      = balances;
+        this.transactions  = [];
     }
 }
 

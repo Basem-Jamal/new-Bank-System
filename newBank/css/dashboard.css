@@ -376,3 +376,116 @@ body {
         width: 100%;
     }
 }
+
+
+.transactions {
+    position: relative;
+    width: 500px;
+    height: 800px;
+    top: 50px;
+    /* background-color: var(--white); */
+    border-radius: 10px;
+    display: flex;
+    justify-self: center;
+}
+
+.form-trans {
+    margin: 20px;
+    position: relative;
+    width: 100%;
+    height: 90%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+.form-trans .depoist {
+    position: relative;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--primary-light);
+    border-radius: 10px;
+    align-items: center;
+
+
+}
+.depoist .title-trans {
+    position: relative;
+    display: flex;
+    top: 20px;
+    padding-top: 20px;
+}
+.depoist i {
+    
+    position: relative;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    color: var(--primary);
+    background: var(--secondary);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.depoist h3 {
+    position: relative;
+    top: 120px;
+    font-weight: 600;
+
+}
+.depoist input {
+    position: relative;
+    display: inline;
+    margin-top: 40px;
+    top: 100px;
+    width: 40%;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #27374D;
+    padding: 10px;
+    font-size: 16px;
+    background: var(--primary);
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+.depoist input::placeholder {
+    position: relative;
+    text-align: right;
+    font-size: 14px;
+}
+
+.depoist button {
+    position: relative;
+    display: block;
+    top: 200px;
+    margin-top: 40px;
+    width: 40%;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #27374D;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    background: var(--secondary);
+    color: var(--primary);
+    transition: all 0.3s ease;
+    
+}
+
+.depoist button:hover {
+    transition: all 0.3s ease;
+
+    background: var(--primary);
+    color: var(--secondary);
+}
